@@ -5,39 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #004e98;
+            color: #fff;
+            height: 30px;
+        }
+
+        th img {
+            max-height: 70px;
+            max-width: 150px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        td.bg-orange {
+            background-color: orange;
+        }
+
+        td.bg-gold {
+            background-color: #FFD700;
+        }
+
+        td.bg-red {
+            background-color: red;
+            color: white;
+        }
+
+        td.bg-lightblue {
+            background-color: #C0C0FF;
+        }
+    </style>
 </head>
 <body>
-    <table border="1" cellspacing="0" cellpadding="4" bordercolor="blue">
+    <table>
         <tr>
-            <th colspan="5" height="30" bgcolor="blue"></th>
-        </tr>
-        <tr bgcolor="white">
-            <th><img src="../img/toyota.png" alt="Imagen Toyota" height="70" width="150"></th>
-            <th align="center"> Abril </th>
-            <th align="center"> Mayo </th>
-            <th align="center"> Junio </th>
-            <th align="center"> Julio </th>
-        </tr>
-        <tr bgcolor="white">
-            <td align="left" bgcolor="orange">Veh&iacute;culos</td>
-            <td align="center">22</td>
-            <td align="center">23</td>
-            <td align="center" bgcolor="#FFD700">3</td>
-            <td align="center">29</td>
+            <th colspan="5" height="30"></th>
         </tr>
         <tr>
-            <td align="left" bgcolor="orange">Visitantes</td>
-            <td align="center">1,234</td>
-            <td align="center">1,537</td>
-            <td align="center" bgcolor="#FFD700">7</td>
-            <td align="center">1,930</td>
+            <th><img src="../img/toyota.png" alt="Imagen Toyota"></th>
+            <th>Abril</th>
+            <th>Mayo</th>
+            <th>Junio</th>
+            <th>Julio</th>
         </tr>
         <tr>
-            <td align="left" bgcolor="orange">Ingresos</td>
-            <td align="center">11,000</td>
-            <td align="center">13,000</td>
-            <td align="center" bgcolor="red">-500</td>
-            <td align="center" bgcolor="#C0C0FF">60,930</td>
+            <td class="bg-orange" align="left">Vehículos</td>
+            <td>22</td>
+            <td>23</td>
+            <td class="bg-gold">3</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td class="bg-orange" align="left">Visitantes</td>
+            <td>1,234</td>
+            <td>1,537</td>
+            <td class="bg-gold">7</td>
+            <td>1,930</td>
+        </tr>
+        <tr>
+            <td class="bg-orange" align="left">Ingresos</td>
+            <td>11,000</td>
+            <td>13,000</td>
+            <td class="bg-red">-500</td>
+            <td class="bg-lightblue">60,930</td>
         </tr>
     </table>
 </body>
